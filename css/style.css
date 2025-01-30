@@ -1,10 +1,82 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-/* khôi phục lại cỡ chữ mặc định (16px) */
-body{
-    font-size: 1.6rem;
+
+body {
+  font-size: 1.6rem;
+  font-family: Poppins;
+}
+
+/* common */
+a {
+  text-decoration: none;
+}
+.main_content {
+  max-width: calc(100% - 48px);
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0 16px;
+  color: #fff;
+  background: #171100;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  padding: 36px 0 8px;
+  align-items: center;
+}
+.header .nav {
+  margin-left: auto;
+}
+.header .nav ul {
+  display: flex;
+}
+.nav li a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+.nav li a:hover,
+.nav li.active a {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+}
+
+.action .btn_sign_up {
+  width: 144px;
+  margin-left: 49px;
+}
+.action .btn_sign_up:hover {
+  background: linear-gradient(to left, #171100, #3d3d3d);
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 19px 38px,
+    rgba(0, 0, 0, 0.22) 5px 15px 12px;
 }
