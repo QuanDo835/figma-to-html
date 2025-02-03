@@ -61,6 +61,9 @@ a {
   word-break: break-all;
 }
 /* header */
+.header {
+  background: #fffcf4;
+}
 .header.fixed {
   position: sticky;
   top: -28px;
@@ -70,7 +73,6 @@ a {
   display: flex;
   padding: 36px 0 8px;
   align-items: center;
-  background: #fffcf4;
 }
 .header .nav {
   margin-left: auto;
@@ -369,4 +371,72 @@ a {
 .course_item .foot .btn_book:hover {
   background: var(--primary-color);
   cursor: pointer;
+}
+
+/* feedback */
+
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+.feedback_list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.feedback_item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback_item .member_name {
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+  margin-top: 18px;
+}
+.feedback_item .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.feedback_item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback_item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback_item .dot.active {
+  background: #ffb900;
+  cursor: default;
+}
+.feedback_item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback_item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
+  margin-left: 30px;
 }
